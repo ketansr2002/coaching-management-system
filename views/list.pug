@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Document
+    link(rel='stylesheet' href='../static/css/header.css')
+    style.
+      * {
+      width: 100%;
+      margin: 0 auto;
+      }
+      #loginmenu h3{
+      padding-top: .5rem;
+      color: #f2f2f2;
+      background: black;
+      border: black;
+      }
+      #loginmenu:hover{
+      background: black;
+      border: #000000;
+      cursor:auto;
+      }
+      body{
+      text-align:center;
+      }
+      .title {
+      color:white;
+      background:black;
+      padding:10px 0;
+      }
+      .mainrow{
+      background:coral;
+      border:1px solid coral
+      }
+      .mainrow th{
+      border:1px solid coral
+      }
+      tr, td {
+      border-bottom: 2px solid #ddd;
+      }
+      tr, td {
+      padding: 15px;
+      text-align: left;
+      }
+      tr, th {
+      padding: 15px;
+      text-align: left;
+      }
+      tr:hover{
+      background-color: coral;
+      }
+  body
+   nav#navbar
+     #loginmenu.login
+       h3 RECORD
+     #mainlogo
+     #menubutton
+       .menu-logo
+         a#menudrop(href='/') logout
+   h1.title Student list
+   table
+      thead
+      tr.mainrow
+       th Name
+       th Phone Number
+       th Course
+       th Email
+       th action
+       th action
+       
+      tbody
+       each student in x
+        tr
+         td #{student.firstname}
+         td #{student.contactnumber}
+         td #{student.course}
+         td #{student.email}
+         td
+          a(href=`/student/${student._id}`) view
+         td
+          a(href=`/x/student/${student._id}` method="delete") delete
+         
+            
+               
+               

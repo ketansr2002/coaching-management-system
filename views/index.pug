@@ -1,0 +1,183 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title main page
+  link(rel='stylesheet' href='../static/css/header.css')
+  link(rel='stylesheet' href='../static/css/registration_form.css')
+  link(rel='stylesheet' href='../static/css//section.css')
+  link(rel='stylesheet' href='../static/css/section2.css')
+  link(rel='stylesheet' href='../static/css/toppers.css')
+  style.
+nav#navbar
+  #loginmenu.login
+    .login-logo
+      img(src='../static/images/login-logo.png' alt='')
+      a#logindrop(href='./loginpage') login
+  #mainlogo
+    img#logo1(src='../static/images/aim2.png'  alt='')
+  #menubutton
+    .menu-logo
+      img(src='../static/images/menu-logo.png' alt='')
+      a#menudrop(href='') menu
+    ul#dropdown
+      li
+        a(href="/") home
+      li
+        a(href="./contact") contact
+      li
+        a(href='./faculty') faculty
+      li
+        a(href='./feeinfo') support
+      li
+        a(href='./help') about Us
+section#home
+  #leftsection
+    h4#newregistration.htext New Registration
+    #newform
+      form(action='/registration' method="POST")
+        .row
+          .col-25
+            label(for='firstname') Name :
+          .col-75
+            input(type='text' placeholder='enter your name here' name="firstname")
+        .row
+          .col-25
+            label(for='fathername') Fathers Name :
+          .col-75
+            input(type='text' placeholder="father's name" name="fathername")
+        .row
+          .col-25
+            label(for='city') City :
+          .col-75
+            input(type='text' placeholder='enter your city here' name="city")
+        .row
+          .col-25
+            label(for='contactnumber') Contact Number:
+          .col-75
+            input(type='number' name='contactnumber' id='')
+        .row
+          .col-25
+            label(for='standard') Standard : 
+          .col-75
+            select#yourstandard(name='standard')
+              option(value='IX') IX
+              option(value='X') X
+              option(value='XI') XI
+              option(value='XII') XII
+              option(value='thirteenth') thirteenth
+        .row
+          .col-25
+            label(for='course') Course :
+          .col-75
+            select(name='course' id='')
+              option(value='MEDICAL') medical
+              option(value='ENGINEERING') engineering
+              option(value='INTERMEDIATE') intermediate
+        .row
+          .col-25
+            label(for='email') Email :
+          .col-75
+            input(type='email' name="email" id='' placeholder='like-xyz.@gamil')
+        .col-100
+          input.newrsubmit(type='submit' value='submit')
+          input.newrsubmit(type='reset' value='reset')
+  #rightsection
+    #heading1.htext Our achievements
+    #halloffame
+      #topper1.toppers
+        img(src='../static/images/topper1.png' alt='')
+        h3#toppername1.htext Siddharth Sisodiya
+      #topper2.toppers
+        img(src='../static/images/topper2.png' alt='')
+        h3#toppername2.htext Tushar Sikka
+      #topper3.toppers
+        img(src='../static/images/topper3.png' alt='')
+        h3#toppername3.htext Rajveer Singh
+    #ourmoto
+      p#para1
+        | our aim is to provide quality education
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+        | dicta accusamus a eveniet id, obcaecati, voluptates, similique in adipisci molestias nobis? Voluptatibus omnis minima amet placeat excepturi consequuntur laborum temporibus.
+#coursehead
+  h1#courseheadteaxt.htext Courses Offered
+  .services
+    section.pricecol
+      .icon
+        img.icon-magic(src='../static/images/engineering_logo.png' alt='')
+      h3
+        span ENGINEERING
+      ul.courseul
+        li Mathematics
+        li Physics
+        li Chemistry
+        li Study Material
+        li Mock Tests
+        li Visual Lectures
+        li Digital Library
+        li Crash course
+      p
+        a.button
+          span JOIN NOW
+    section.pricecol
+      .icon
+        img.icon-magic(src='../static/images/medical_logo.png' alt='')
+      h3
+        span MEDICAL
+      ul.courseul
+        li Biology
+        li Chemistry
+        li Physics
+        li Study Material
+        li Mock Tests
+        li Visual Lectures
+        li Digital Library
+        li Crash course
+      p
+        a.button
+          span JOIN NOW
+    section.pricecol
+      .icon
+        img.icon-magic(src='../static/images/ubey.png' alt='')
+      h3
+        span INTERMEDIATE
+      ul.courseul
+        li Biology
+        li Chemistry
+        li Physics
+        li English
+        li Previous Year Papers
+        li Mock Tests
+        li Quizes
+        li Crash course
+      p
+        a.button(href='#home')
+          span JOIN NOW
+  .footer
+    h2 OUR BRANCHES
+    .branchrow
+      .branchcol
+        h4
+          span Jhansi
+        ul
+          li G-12 SM Tower
+          li Elite Sqaure
+          li Jhansi (UP)
+          li Pin: 284003
+      .branchcol
+        h4
+          span Datis
+        ul
+          li Topkahna
+          li Mohan Market
+          li Datia (MP)
+          li Pin: 244003
+      .branchcol
+        h4
+          span Lalitpur
+        ul
+          li G-12 SM Tower
+          li Elite Sqaure
+          li Lalitpur (UP)
+          li Pin: 284007

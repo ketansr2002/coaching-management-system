@@ -1,0 +1,90 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title contact
+  link(rel='stylesheet' href='../static/css/header.css')
+  link(rel='stylesheet' href='../static/css/registration_form.css')
+  link(rel='stylesheet' href='../static/css//section.css')
+  link(rel='stylesheet' href='../static/css/section2.css')
+  link(rel='stylesheet' href='../static/css/toppers.css')
+  style.
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+    background-color: #000000;
+    color: white;
+    float: left;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+    background-color: #000000;
+    }
+    /* Add a background color and some padding around the form */
+    .container {
+    margin-top: 0;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    height: 130vh;
+    padding: 20px;
+    }
+    #loginmenu h3{
+    padding-top: 1rem;
+    color: #f2f2f2;
+    background: black;
+    border: black;
+    }
+    #loginmenu:hover{
+    background: #000000;
+    border: #000000;
+    cursor:auto;
+    }
+nav#navbar
+  #loginmenu.login
+    h3 contact form
+  #mainlogo
+    img#logo1(src='../static/images/logo.png' alt='')
+  #menubutton
+    .menu-logo
+      img(src='../static/images/menu-logo.png' alt='')
+      a#menudrop(href='') menu
+    ul#dropdown
+      li
+        a(href="/") home
+      li
+        a(href="./contact") contact
+      li
+        a(href='./faculty') faculty
+      li
+        a(href='./feeinfo') support
+      li
+        a(href='./help') learn more
+.container
+  form(action='/contact' method="POST")
+    label(for='name') Name
+    input#fname(type='text' name='name' placeholder='Your name..')
+    label(for='email') Email
+    input#lname(type='email' name='email' placeholder='xyz@email.com')
+    label(for='city') City
+    select#country(name='city')
+      option(value='Jhansi') Jhansi
+      option(value='Datia') Datia
+      option(value='Lalitpur') Lalitpur
+    label(for='subject') Subject
+    textarea#subject(name='subject' placeholder='Write something..' style='height:200px')
+    input(type='submit' value='Submit')

@@ -1,0 +1,89 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title login page
+  link(rel='stylesheet' href='../static/css/header.css')
+  link(rel='stylesheet' href='../static/css/registration_form.css')
+  link(rel='stylesheet' href='../static/css//section.css')
+  link(rel='stylesheet' href='../static/css/section2.css')
+  link(rel='stylesheet' href='../static/css/toppers.css')
+  link(rel='stylesheet' href='../static/css/loginStyle.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  style.
+    #navbar {
+    width :100%;
+    margin-right:0;
+    }
+    #loginmenu h3 {
+    padding-top: 1rem;
+    color: #f2f2f2;
+    background: black;
+    border: black;
+    }
+    #loginmenu:hover {
+    background: #000000;
+    border: #000000;
+    cursor: auto;
+    }
+    .form {
+    margin: auto;
+    }
+nav#navbar
+  #loginmenu.login
+    h3 Login
+  #mainlogo
+    img#logo1(src='../static/images/logo.png' alt='')
+  #menubutton
+    .menu-logo
+      img(src='../static/images/menu-logo.png' alt='')
+      a#menudrop(href='') menu
+    ul#dropdown
+      li
+        a(href='/') home
+      li
+        a(href='./contact') contact
+      li
+        a(href='./faculty') faculty
+      li
+        a(href='./feeinfo') support
+      li
+        a(href='./help') learn more
+.form
+  .buttons
+    label.login.btn(for='chbox')
+      span Student
+    label.SignUp.btn(for='chbox')
+      span Faculty
+  input#chbox(type='checkbox')
+  .layer
+  .layer2
+  form.login_form(action='/loginstudent' method='POST')
+    br
+    input(type='email' placeholder='Username' name='email')
+    br
+    input(type='password' placeholder='password' name='password')
+    br
+    input.submit(type='submit' value='Submit')
+    hr
+    span.tag welcome!!
+    .icons
+      a.fa.fa-facebook(href='#')
+      a.fa.fa-twitter(href='#')
+      a.fa.fa-google(href='#')
+      a.fa.fa-linkedin(href='#')
+  form.SignUp_form(action='/loginteacher' method='POST')
+    br
+    input(type='text' placeholder='Username' name='username')
+    br
+    input(type='password' name='password' placeholder='password')
+    br
+    input.submit(type='submit' value='Submit')
+    hr
+    span.tag welcome!
+    .icons
+      a.fa.fa-facebook(href='#')
+      a.fa.fa-twitter(href='#')
+      a.fa.fa-google(href='#')
+      a.fa.fa-linkedin(href='#')

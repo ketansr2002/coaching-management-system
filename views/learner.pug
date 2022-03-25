@@ -1,0 +1,111 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title facultylogin
+  link(rel='stylesheet' href='../static/css/header.css')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+  style.
+    #loginmenu h5{
+    padding-top: 1rem;
+    color: #f2f2f2;
+    width:120px;
+    background: black;
+    border: black;
+    }
+    #loginmenu:hover{
+    background: #000000;
+    border: #000000;
+    cursor:auto;
+    }
+    #loginmenu{
+    width:100px;
+    }
+    #navbar{
+    box-shadow: none;
+    }
+    .details{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin: 2% 10% 0 10%;
+    border-radius: 10px;
+    height: 83vh;
+    z-index: -1;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 10px 15px 10px rgb(187, 187, 187);
+    background: radial-gradient(#ffffff,#cfcfcfcf);
+    }
+    .person-details{
+    padding: 1% 2% 2% 2%;
+    margin: auto;
+
+    }
+    .image{
+    margin: 0 auto;
+    display: block;
+    height: 150px;
+    width: 150px;
+    }
+    .image img{
+    padding: 10px 0 0 0 ;
+    position: inherit;
+    height: 110px;
+    width: 110px;
+    }
+    .back-btn{
+    color:white;
+    font-size:1.5rem;
+    font-weight:600;
+    border:2px solid grey;
+    background:black;
+    padding:2px 30px;
+    border-radius:20px;
+    margin-left:32%;
+    }
+    .back-btn:hover a{
+      cursor:pointer;
+      box-shadow:3px 3px 3px grey;
+    }
+nav#navbar
+  #loginmenu.login
+    h5 Profile
+  #mainlogo
+    img#logo1(src='../static/images/logo.png' alt='')
+  #menubutton
+    .menu-logo
+      img(src='../static/images/menu-logo.png' alt='')
+      a#menudrop(href='') menu
+    ul#dropdown
+      li
+        a(href='/') home
+section.details
+  .image
+    img.img(src='../static/images/contact-img.png' alt='')
+  .person-details
+    h4
+      pre.
+        NAME        : #{x.firstname}         
+    h4
+      pre.
+        FATHER NAME : #{x.fathername} 
+    h4
+      pre.
+        CITY        : #{x.city} 
+    h4
+      pre.
+        CONTACT     : #{x.contactnumber}
+
+    h4
+      pre.
+        EMAIL       : #{x.email}
+    h4
+      pre.
+        CLASS       : #{x.standard}
+    h4
+      pre.
+        COURSE      : #{x.course}
+    a.back-btn(href='/allStudents' type='button' value='submit' method='POST') Back
