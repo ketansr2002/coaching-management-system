@@ -1,0 +1,80 @@
+/* style the container of  the registration form */
+#newform{
+    /* position: relative; */
+    top: 1rem;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px grey;
+    padding: 20px;
+    background: none;
+    
+}
+
+/* style inputs and select elements */
+input[type=text],input[type=number],input[type=email],select{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* style label to display next to inputs */
+label{
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+}
+
+/* floating column for levels: 25% width */
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* floating column for levels: 75% width */
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* clear floats after the colums */
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* style submit and reset buttons */
+input[type=submit],input[type=reset]{
+    background-color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
+    width:35%;
+    margin-top: 10px;
+    padding: 6px 10px;
+    border: none;
+    border-radius:5px ;
+    cursor: pointer;
+    float: right;
+    margin-right: 7px;
+}
+
+/* for responsiveness :when screen size is less then 600px ,
+make the two colomn stack on each other instead of next to each other  */
+@media screen and (max-width:600) {
+    .col-25.col-75,input[type=submit],input[type=reset]{
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+#newregistration{   
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px rgb(148, 148, 148) ;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 1.2rem;
+    padding: 0rem;
+     font-size: 1.5rem;
+     font-weight: 700;
+}

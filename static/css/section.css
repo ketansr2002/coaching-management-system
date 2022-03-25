@@ -1,0 +1,58 @@
+/* the main body should accquire 100% width  */
+body{
+    margin: 0px 0px;
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+#home{
+    display: grid;
+    margin-top: 1.5rem;
+    grid-template-columns: 1.1fr 2fr;
+    height: 513px;
+    width: 100%;
+}
+
+/* styling of the left section of the home page */
+#leftsection{
+    display: flex;
+    flex-direction: column;   
+    text-align: center; 
+}
+
+
+
+
+
+
+/* this css is for the right part of the section home */
+#rightsection{
+    display: grid;
+    grid-template-rows: .5fr 3fr 1fr;
+
+}
+#heading1{
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px grey ;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+#halloffame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ourmoto{
+    text-align: center;
+}
+#ourmoto p{
+    text-align: center;  
+    font-weight: 500; 
+    padding: 1rem 1rem;
+    font-size: 1.15rem;
+}
+

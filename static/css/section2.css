@@ -1,0 +1,170 @@
+/* styling ot the course offered heading */
+#coursehead{
+    height:10%;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+#coursehead h1{
+ 
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+
+/* grid that contain 3 container to hold the decrption of the courses offered */
+
+.services
+{
+width:100%;
+overflow:auto;
+position:relative;
+margin:0 auto;
+z-index: -1;
+margin-top: 2rem;
+}
+.pricecol
+{
+width:31%;
+background:rgb(38, 48, 52);
+min-height:30%;
+border-radius:10px;
+position:relative;
+padding:30px 0px;
+text-align:center;
+font-family:verdana;
+float:left;
+margin-left:20px;
+}
+.icon
+{
+width:60px;
+height:60px;
+border-radius:100%;
+background:linear-gradient(to left, rgb(219, 217, 217) , white);
+color:#fff;
+text-align:center;
+position:relative;
+justify-content: center;
+align-items: center;
+margin:0 auto;
+
+}
+.icon img
+{
+height: 100%;
+width: 100%;
+font-size:30px;
+
+}
+h3
+{
+text-align:center;
+background:rgb(34, 43, 47);
+text-align:center;
+border-top:1px solid rgb(25, 31, 34);
+border-bottom:1px solid rgb(51, 60, 64);
+color:#fff;
+}
+h3 span
+{
+border-top:1px solid rgb(51, 60, 64);
+border-bottom:1px solid  rgb(25, 31, 34);
+display:block;
+padding: 10px 0px;
+font-family:verdana;
+font-size:20px;
+}
+.button
+{
+    border-radius:34px;
+    border:5px solid rgba(255, 255, 255, 0.07);
+    color:rgb(31, 31, 31);
+    font-size:16px;
+    margin-top:15px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15);
+    cursor:pointer;
+    display:inline-block;
+}
+.button span
+{
+cursor:text;
+display:inline-block;
+padding:10px 15px;
+background: none repeat scroll 0% 0% rgb(255, 255, 255);
+border-radius:20px;
+box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.3) inset, 0px 2px 0px rgba(255, 255, 255, 0.1) inset;
+}
+
+.button:hover{
+    background: aliceblue;
+}
+.button:hover a span{
+    cursor:text;
+}
+.courseul
+{
+list-style-type:none;
+padding:0px;
+color:#fff;
+font-family:verdana;
+font-size:14px;
+margin:0 auto;
+text-align:center;
+width:70%;
+color:rgb(165, 174, 178);
+border-bottom:1px solid rgb(51, 60, 64);
+border-top:1px solid rgb(25, 31, 34);
+}
+.courseul li
+{
+padding:10px 0px;
+border-top:1px solid rgb(51, 60, 64);
+border-bottom:1px solid rgb(25, 31, 34);
+}
+
+
+
+
+
+
+
+/* footer styling containing branches of the coaching */
+.footer{
+    margin-top: 3rem;
+    width: 100%;
+    min-height: 60vh;
+    background: rgb(37, 37, 37);
+}
+.footer h2{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+.branchrow{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top: 1rem;
+    grid-gap: 10px;
+}
+.branchcol{
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+.branchcol h4{
+    font-size: 22px;
+    font-weight: 400;
+}
+.branchcol ul{
+    text-align: center;
+    color: rgb(19, 19, 19);
+    list-style: none;
+}
+.branchcol ul li{
+    margin: 15px 0;
+}

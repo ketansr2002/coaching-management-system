@@ -1,0 +1,41 @@
+.toppers{
+    display: inline-flexbox;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgba(155, 153, 153, 0.815);
+    box-shadow: 5px 5px 5px grey;
+    background: linear-gradient(to left,rgb(80 78 78 / 39%) , rgb(214 214 214 / 75%));
+border-radius: 3rem;
+    height: 300px;
+    width: 230px;
+    
+}
+.toppers img{
+    margin-left: 15%;
+    height: 70%;
+    width: 70%;
+}
+#toppername1{
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    word-wrap: normal;
+    margin: 10% 0%;
+       text-shadow: 1px 1px 1px grey; 
+}
+#toppername2{
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    word-wrap: normal;
+    margin: 10% 0%;   
+     text-shadow: 1px 1px 1px grey;
+}
+#toppername3{
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    word-wrap: normal;
+    margin: 10% 0%;  
+      text-shadow: 1px 1px 1px grey;
+}
